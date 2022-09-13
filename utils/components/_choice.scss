@@ -1,5 +1,4 @@
 .choice {
-  position: relative;
   padding: 48px 29px;
   background: none;
 
@@ -43,14 +42,9 @@
 }
 
 .choice-wrapper {
-
-  //display: grid;
-  //grid-template-columns: 1fr 1fr;
-  //grid-template-rows: 1fr 1fr;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 
   @media screen and (min-width: 321px) {
     display: flex;
@@ -60,13 +54,17 @@
 }
 
 .choice-wrapper__item:nth-child(1) {
-  position: relative;
-  top: 38px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 38px;
+  }
 }
 
 .choice-wrapper__item:nth-child(4) {
-  position: relative;
-  top: 38px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 38px;
+  }
 }
 
 .first {
@@ -81,13 +79,23 @@
   }
 }
 
-.big-hedgehog {
+.picture-hedgehog {
   position: absolute;
   width: 203px;
   left: 23%;
   top: 254%;
   @media screen and (min-width: 321px) {
     visibility: hidden;
+  }
+}
+
+.big-hedgehog {
+  position: absolute;
+  top: -1241px;
+  left: 35px;
+  width: 212px;
+  @media screen and (min-width:321px) {
+    display: none;
   }
 }
 
@@ -192,6 +200,8 @@
 
 }
 
+//===================cards================
+
 .cards {
   display: flex;
   flex-direction: row;
@@ -246,6 +256,8 @@
     display: block;
   }
 }
+
+
 .cards__item__title {
   font-family: 'Cormorant Infant', sans-serif;
   font-style: normal;
@@ -275,6 +287,10 @@
   color: #c2ccca;
   text-decoration: line-through;
   display: block;
+}
+
+.cards__item__img {
+  
 }
 
 .cards__item__new-price {

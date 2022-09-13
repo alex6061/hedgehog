@@ -1,7 +1,7 @@
 .footer {
   background: #70908B;
-  padding: 19px 0 35px;
-  @media screen and (max-width: 321px) {
+  padding: 35px 0 35px;
+  @media screen and (min-width: 321px) {
     padding: 0 10px;
   }
 }

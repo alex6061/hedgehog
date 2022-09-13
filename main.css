@@ -363,7 +363,6 @@ ul {
   color: #195557; }
 
 .choice {
-  position: relative;
   padding: 48px 29px;
   background: none; }
   @media screen and (min-width: 321px) {
@@ -399,22 +398,24 @@ ul {
     float: right; } }
 
 .choice-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
   @media screen and (min-width: 321px) {
     .choice-wrapper {
       display: flex;
       gap: 190px;
       justify-content: center; } }
 
-.choice-wrapper__item:nth-child(1) {
-  position: relative;
-  top: 38px; }
+@media screen and (min-width: 768px) {
+  .choice-wrapper__item:nth-child(1) {
+    position: relative;
+    top: 38px; } }
 
-.choice-wrapper__item:nth-child(4) {
-  position: relative;
-  top: 38px; }
+@media screen and (min-width: 768px) {
+  .choice-wrapper__item:nth-child(4) {
+    position: relative;
+    top: 38px; } }
 
 .first {
   display: block;
@@ -427,14 +428,23 @@ ul {
       width: 152px;
       height: 152px; } }
 
-.big-hedgehog {
+.picture-hedgehog {
   position: absolute;
   width: 203px;
   left: 23%;
   top: 254%; }
   @media screen and (min-width: 321px) {
-    .big-hedgehog {
+    .picture-hedgehog {
       visibility: hidden; } }
+
+.big-hedgehog {
+  position: absolute;
+  top: -1241px;
+  left: 35px;
+  width: 212px; }
+  @media screen and (min-width: 321px) {
+    .big-hedgehog {
+      display: none; } }
 
 .picture {
   width: 100px;
@@ -638,7 +648,7 @@ ul {
 .wrapper {
   display: flex;
   flex-direction: column; }
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 321px) {
     .wrapper {
       display: flex;
       flex-direction: row;
@@ -709,7 +719,7 @@ ul {
     .hedgehog-form__wrapper {
       display: flex;
       flex-direction: column; } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     .hedgehog-form__wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -803,8 +813,8 @@ ul {
 
 .footer {
   background: #70908B;
-  padding: 19px 0 35px; }
-  @media screen and (max-width: 321px) {
+  padding: 35px 0 35px; }
+  @media screen and (min-width: 321px) {
     .footer {
       padding: 0 10px; } }
 
