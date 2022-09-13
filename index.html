@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="utils/main.css">
     <link rel="stylesheet" href="./JS.js">
 
 
@@ -159,11 +159,14 @@
                             <button class="button-hedgehog">хочу ёжика для детей</button>
                             <button class="button-hedgehog">хочу ёжика для разведения</button>
                         </div>
-                        <div class="wrapper-checkbox">
-                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="checkbox">Мне нужен 1-2 ёжика</label>
-                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="checkbox">Мне нужны 3-4 ёжика</label>
-                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="checkbox">Мне нужны 3 и более ёжиков</label>
-                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="checkbox">Пока присматриваюсь</label>
+                        <div class="wrapper-radio">
+                            <input type="radio">
+                            <label class="wrapper-checkbox_item" for="checkbox__input">Мне нужен 1-2 ёжика</label>
+
+                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="radio">Мне нужен 1-2 ёжика</label>
+                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="radio">Мне нужны 3-4 ёжика</label>
+                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="radio">Мне нужны 3 и более ёжиков</label>
+                            <label class="wrapper-checkbox_item" for="checkbox__input"><input type="radio">Пока присматриваюсь</label>
                         </div>
                     </div>
                     <form  class="hedgehog-form" action="">
@@ -200,8 +203,7 @@
 
 
 <footer class="footer">
-
-        <div class="big_container container ">
+        <div class="big_container container">
             <div class="footer__wrapper">
                 <img src="img/svg/Logo_footer.svg" alt="logo-footer" class="footer-logo">
                 <ul class="footer-nav">
@@ -225,8 +227,10 @@
                 </div>
                 <a href="tel:+7 (965) 569-89-98" class="footer-tel">+7 (965) 569-89-98</a>
             </div>
-            <p class="footer_info">Все права защищены.</p>
-            <p class="footer_info">Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+            <div class="footer_info__wrapper">
+                <p class="footer_info">Все права защищены.</p>
+                <p class="footer_info">Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+            </div>
         </div>
 </footer>
 
